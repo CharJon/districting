@@ -1,3 +1,15 @@
+# Project specific
+build
+cmake-build-*
+.idea
+
+# Directories and files
+*.lp
+# dir with test data (local)
+NJ/*
+data/*
+grids/*
+
 # Prerequisites
 *.d
 
@@ -34,7 +46,7 @@ districting
 ralg_hot_start
 translate
 
-#Custom
+# Custom
 gerry_assign
 *.lp
 *.out

@@ -1,9 +1,11 @@
-#include "ralg.h"
+#include "districting/ralg.hpp"
+
 #include <cfloat>
-#include <mkl_cblas.h>
 #include <malloc.h>
 #include <cstdio>
 #include <ctime>
+
+#include "cblas.h"
 
 #ifndef min
 #define min(a,b) (((a)<(b))?(a):(b))

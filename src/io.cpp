@@ -1,13 +1,16 @@
-#include "graph.h"
-#include "io.h"
+#include "districting/io.hpp"
+
 #include <vector>
 #include <cstdio>
 #include <cstring>
 #include <stdarg.h>
 #include <string>
 #include <cmath>
+
 #include "gurobi_c++.h"
-#include "common.h"
+
+#include "districting/graph.hpp"
+#include "districting/common.hpp"
 
 using namespace std;
 

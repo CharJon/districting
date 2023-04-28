@@ -4,10 +4,12 @@
 #include <algorithm>
 #include <unordered_set>
 #include <string>
-#include "graph.h"
+
 #include "gurobi_c++.h"
-#include "models.h"
-#include "io.h"
+
+#include "districting/graph.hpp"
+#include "districting/models.hpp"
+#include "districting/io.hpp"
 
 using namespace std;
 

@@ -1,9 +1,12 @@
 // source file for single and multi commodity flow formulations
 #include <unordered_map>
 #include <vector>
+
 #include "gurobi_c++.h"
-#include "graph.h"
-#include "models.h"
+
+#include "districting/graph.hpp"
+#include "districting/models.hpp"
+
 
 void build_shir(GRBModel* model, hess_params& p, graph* g)
 {

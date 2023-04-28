@@ -1,10 +1,12 @@
 // source file for cut based formulations
-#include "graph.h"
-#include "gurobi_c++.h"
-#include "models.h"
 #include <chrono>
 #include <unordered_set>
 #include <queue> // priority queue
+
+#include "gurobi_c++.h"
+
+#include "districting/graph.hpp"
+#include "districting/models.hpp"
 
 const bool do_reverse_nb = true; // controls whether cut C is found near a (true) or near b (false)
 

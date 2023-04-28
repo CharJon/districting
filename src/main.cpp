@@ -1,21 +1,23 @@
-#include "gurobi_c++.h"
-#include "graph.h"
-#include "io.h"
-#include "models.h"
-#include <algorithm>
 #include <cstdio>
-#include <vector>
-#include <cmath>
 #include <cstring>
+#include <cmath>
+
+#include <algorithm>
+#include <vector>
 #include <chrono>
 #include <string>
-#include "common.h"
+
+#include "gurobi_c++.h"
+
+#include "districting/io.hpp"
+#include "districting/graph.hpp"
+#include "districting/models.hpp"
+#include "districting/common.hpp"
+#include "districting/version.hpp"
 
 const double VarFixingEpsilon = 0.00001;
 
 using namespace std;
-extern const char* gitversion;
-
 template <typename T>
 void dealloc_vec(vector<T>& v, const char* name)
 {

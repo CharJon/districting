@@ -1,15 +1,17 @@
 // source file for lagrangian relaxation model
 #include <cstdio>
 #include <cassert>
+
 #include <vector>
 #include <algorithm>
 #include <iostream>
 #include <queue>
-#include "common.h"
-#include "graph.h"
-#include "models.h"
-#include "ralg/ralg.h"
-#include "io.h"
+
+#include "districting/common.hpp"
+#include "districting/graph.hpp"
+#include "districting/models.hpp"
+#include "districting/ralg.hpp"
+#include "districting/io.hpp"
 
 double solveLagrangian(graph* g, const vector<vector<double>>& w, const vector<int> &population, int L, int U, int k, 
   vector<vector<double>>& LB1, bool ralg_hot_start, const char* ralg_hot_start_fname, const run_params& rp, bool exploit_contiguity)

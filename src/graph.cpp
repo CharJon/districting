@@ -1,12 +1,15 @@
-#include "graph.h"
+#include "districting/graph.hpp"
+
 #include <cstdio>
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
 #include <set>
 #include <stack>
-#include "rank.hpp"
+
+#include "districting/rank.hpp"
 
 using namespace std;
 

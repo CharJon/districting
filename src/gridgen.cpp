@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <cmath>
+
 #include <string>
 
 #define OPEN_AND_CHECK(fn) \

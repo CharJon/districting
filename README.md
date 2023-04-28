@@ -2,11 +2,14 @@
 C++ code and experimental results to accompany the paper "Imposing contiguity constraints in political districting models" by Hamidreza Validi, Austin Buchanan, and Eugene Lykhovyd. [(pdf)](http://www.optimization-online.org/DB_HTML/2020/01/7582.html) [(slides)](https://github.com/zhelih/districting/blob/master/Districting_slides.pdf) :earth_americas:
 
 #### Build:
+Gurobi version 10.0 or 9.1 need to be installed.
+
 ```
-cd src/
-make
+mkdir build
+cd build
+cmake -DGUROBI_DIR=/path/to/your/gurobi/dir ..
 ```
-Environment variable `GUROBI_HOME` must point to current GUROBI installation. The current `Makefile` is written for version 9.1.2, corresponding changes might be needed to correctly link with another version.
+
 #### Binaries
 
 - `ralg_hot_start` computes good starting point for the r-algorithm, e.g., computes Lagrangian Dual bound. This is important step to fix as many variables as possible.

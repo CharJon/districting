@@ -1,18 +1,21 @@
-#include "gurobi_c++.h"
-#include "graph.h"
-#include "io.h"
-#include "models.h"
-#include <algorithm>
-#include <cstdio>
-#include <vector>
 #include <cmath>
 #include <cstring>
+#include <cstdio>
+
+#include <algorithm>
+#include <vector>
 #include <chrono>
 #include <string>
-#include "common.h"
+
+#include "gurobi_c++.h"
+
+#include "districting/common.hpp"
+#include "districting/version.hpp"
+#include "districting/graph.hpp"
+#include "districting/io.hpp"
+#include "districting/models.hpp"
 
 using namespace std;
-extern const char* gitversion;
 
 int main(int argc, char *argv[])
 {
