@@ -2,7 +2,7 @@
 C++ code and experimental results to accompany the paper "Imposing contiguity constraints in political districting models" by Hamidreza Validi, Austin Buchanan, and Eugene Lykhovyd. [(pdf)](http://www.optimization-online.org/DB_HTML/2020/01/7582.html) [(slides)](https://github.com/zhelih/districting/blob/master/Districting_slides.pdf) :earth_americas:
 
 #### Build:
-Gurobi version 10.0 or 9.1 need to be installed.
+Gurobi version 11.0 or 10.0 need to be installed.
 
 ```
 mkdir build
