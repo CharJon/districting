@@ -42,9 +42,6 @@ grids/*
 *.exe
 *.out
 *.app
-districting
-ralg_hot_start
-translate
 
 # Custom
 gerry_assign
