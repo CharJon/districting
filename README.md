@@ -8,6 +8,7 @@ Gurobi version 11.0 or 10.0 need to be installed.
 mkdir build
 cd build
 cmake -DGUROBI_DIR=/path/to/your/gurobi/dir ..
+make -j
 ```
 
 #### Binaries
